@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  pgdb:
+    image: postgres
+    container_name: db-postgres-container
+    environment: 
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    volumes: 
+      -./api_node/src/database/:var/lib/postgres
+    restart: always
+  api:
+    build:
+      ""
+      container_name: api-node-container
+      restart: always
+      volumes:
+        -./api_node:/home/node/app
+      ports:
+        -"5433:5432"
+      depends_on:
+        -db_postgres
+  frontend:
+      container_name: frontend-container
+
