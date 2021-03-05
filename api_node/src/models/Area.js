@@ -13,7 +13,7 @@ class Area extends Model {
         this.belongsToMany(models.Area, {
             foreignKey: 'company_id', through: 'company_area', as: 'companies'
         });
-        this.hasMany(models.Office, { foreignKey: 'office_id', as: 'offices' });
+        this.hasMany(models.Office, { as: 'offices' });
     }
 }
 

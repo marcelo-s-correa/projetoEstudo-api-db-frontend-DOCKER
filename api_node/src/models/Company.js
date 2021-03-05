@@ -14,7 +14,7 @@ class Company extends Model {
         this.belongsToMany(models.Area, {
             foreignKey: 'area_id', through: 'company_area', as: 'areas'
         });
-        this.hasMany(models.User, { foreignKey: 'user_id', as: 'users' });
+        this.hasMany(models.User, { as: 'users' });
     }
 }
 
