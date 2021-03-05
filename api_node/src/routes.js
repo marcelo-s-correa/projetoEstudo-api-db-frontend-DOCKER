@@ -17,7 +17,7 @@ routes.post('/users', UserController.store) //grava um novo usuario
 //ROTAS DA COMPANHIA
 
 routes.get('/companies', CompanyController.index) //busca todas as companhias
-routes.post('/compnies', CompanyController.store) //grava uma nova companhia
+routes.post('/companies', CompanyController.store) //grava uma nova companhia
 
 //ROTAS DOS CARGOS
 
