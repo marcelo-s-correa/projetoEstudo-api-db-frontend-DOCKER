@@ -10,7 +10,10 @@ class Area extends Model {
     }
 
     static associate(models) {
-        this.hasOne(models.Office, { foreignKey: 'user_id', as: 'offices' });
+        this.belongsToMany(models.Area, {
+            foreignKey: 'company_id', through: 'company_area', as: 'companies'
+        });
+        this.hasMany(models.Office, { foreignKey: 'office_id', as: 'offices' });
     }
 }
 

@@ -9,8 +9,8 @@ class Office extends Model {
         })
     }
     static associate(models) {
-        this.belongsTo(models.User, { foreignKey: 'office_id', as: 'users' });
-        this.hasOne(models.Area, { foreignKey: 'office_id', as: 'areas' });
+        this.hasMany(models.User, { foreignKey: 'user_id', as: 'users' });
+        this.belongsTo(models.Area, { foreignKey: 'area_id', as: 'areas' });
     }
 }
 

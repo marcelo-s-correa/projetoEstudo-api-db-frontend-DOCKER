@@ -11,7 +11,8 @@ class User extends Model {
         })
     }
     static associate(models) {
-        this.hasOne(models.Office, { foreignKey: 'user_id', as: 'offices' });
+        this.belongsTo(models.Office, { foreignKey: 'office_id', as: 'offices' });
+        this.belongsTo(models.Company, { foreignKey: 'company_id', as: 'companies' });
     }
 }
 

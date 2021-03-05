@@ -9,6 +9,12 @@ class Company extends Model {
             sequelize
         })
     }
+    static associate(models) {
+        this.belongsToMany(models.Area, {
+            foreignKey: 'area_id', through: 'company_area', as: 'areas'
+        });
+        this.hasMany(models.User, { foreignKey: 'user_id', as: 'users' });
+    }
 }
 
 module.exports = Company;
