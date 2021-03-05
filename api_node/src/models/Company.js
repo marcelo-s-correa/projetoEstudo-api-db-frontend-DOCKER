@@ -5,6 +5,7 @@ class Company extends Model {
         super.init({
             name: DataTypes.STRING,
             city: DataTypes.STRING,
+            user_id: DataTypes.INTEGER,
         }, {
             sequelize
         })

@@ -10,7 +10,7 @@ module.exports = {
     async store(req, res) {
         const { name } = req.body;
 
-        const offices = await User.create({ name });
+        const offices = await Office.create({ name });
 
         return res.json(offices);
     }

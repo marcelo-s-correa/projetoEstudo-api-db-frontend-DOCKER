@@ -11,17 +11,17 @@ module.exports = {
       },
       company_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
         references: { model: 'companies', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
+        allowNull: false,
       },
       area_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
         references: { model: 'areas', key: 'id' },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
+        allowNull: false,
       },
       created_at: {
         type: Sequelize.DATE,

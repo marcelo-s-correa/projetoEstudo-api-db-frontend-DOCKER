@@ -6,7 +6,7 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrment: true,
+        autoIncrement: true,
         allowNull: false
       },
       name: {
@@ -19,14 +19,6 @@ module.exports = {
       },
       city: {
         type: Sequelize.STRING,
-        allowNull: false,
-      },
-      company_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      office_id: {
-        type: Sequelize.INTEGER,
         allowNull: false,
       },
       created_at: {

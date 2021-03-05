@@ -6,19 +6,11 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
-        autoIncrment: true,
+        autoIncrement: true,
         allowNull: false
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: false,
-      },
-      user_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      area_id: {
-        type: Sequelize.INTEGER,
         allowNull: false,
       },
       created_at: {

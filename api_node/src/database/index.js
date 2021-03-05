@@ -14,9 +14,9 @@ Company.init(connection)
 Office.init(connection)
 Area.init(connection)
 
-User.associate(connection.models);
-Company.associate(connection.models);
-Office.associate(connection.models);
-Area.associate(connection.models);
+// User.associate(connection.models);
+// Company.associate(connection.models);
+// Office.associate(connection.models);
+// Area.associate(connection.models);
 
 module.exports = connection;

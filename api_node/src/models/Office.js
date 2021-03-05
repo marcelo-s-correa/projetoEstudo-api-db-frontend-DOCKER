@@ -4,6 +4,8 @@ class Office extends Model {
     static init(sequelize) {
         super.init({
             name: DataTypes.STRING,
+            user_id: DataTypes.INTEGER,
+            area_id: DataTypes.INTEGER,
         }, {
             sequelize
         })

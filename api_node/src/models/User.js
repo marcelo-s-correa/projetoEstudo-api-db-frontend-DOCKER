@@ -6,6 +6,8 @@ class User extends Model {
             name: DataTypes.STRING,
             age: DataTypes.INTEGER,
             city: DataTypes.STRING,
+            company_id: DataTypes.INTEGER,
+            office_id: DataTypes.INTEGER,
         }, {
             sequelize
         })
