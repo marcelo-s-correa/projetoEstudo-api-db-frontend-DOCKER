@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/company.css">
+    <title>Empresa | Lista Completa</title>
 </head>
 
 <body>
 
+    <h1 style="text-align: center;">Lista de empresas cadastradas</h1>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Deletar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <th scope="row">1</th>
+            <td>Nome da empresa</td>
+            <td>Cidade</td>
+            <td>
+                <a href="">
+                    <img src="../../assets/img/lapis.svg" width="20px" height="20px" alt="edit">
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="../../assets/img/trash.svg" width="40px" height="40px" alt="delete">
+                </a>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button type="button" class="btn btn-primary">Cadastrar nova Empresa</button>
+        <button type="button" class="btn btn-dark">Voltar a Home</button>
+    </div>
 </body>
 
 </html>

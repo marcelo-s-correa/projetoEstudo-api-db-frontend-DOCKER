@@ -1,3 +1,7 @@
 html, body {
-    
+    background-color: #454d55;
+}
+
+.action-buttons div {
+    background-color: #ffff;
 }
